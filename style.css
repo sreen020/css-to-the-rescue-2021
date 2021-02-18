@@ -1,0 +1,225 @@
+:root {
+  --main-color: #06c;
+  --accent-color: #006;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #202124;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+main > div {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: #000;
+  color: #fff;
+}
+
+main > div label {
+  font-family: "Roboto", sans-serif;
+  padding-right: 1rem;
+}
+
+main > label {
+  color: #f3510a;
+  font-size: 0.7rem;
+}
+
+/* MAIN HEADER  */
+body > header {
+  background-color: #2d3134;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+  transform-origin: center top;
+  box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
+}
+
+body > header h1 {
+  color: #202020;
+  font-size: 4rem;
+  letter-spacing: 0.1em;
+  text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
+}
+
+body > header p {
+  color: #202020;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
+}
+
+main input {
+  margin: 1rem 0.5rem 1rem 1rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "a b c"
+    "d e f"
+    "g h i";
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background-color: #2d3134;
+
+  /* REMOVE */
+  color: #fefefd;
+  min-height: 10rem;
+  padding: 3rem 2rem;
+  margin: 1.5rem;
+  border-radius: 11px;
+
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+  /* background-image: linear-gradient(#dd3e54, #6be585);
+  background-attachment: fixed; */
+}
+
+article input:first-of-type {
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+article input:first-of-type:before {
+  content: "\f08a";
+  font-family: "FontAwesome";
+  font-size: 1.1rem;
+  color: #f3510a;
+  outline: none;
+  border: none;
+  transition: 0.3s all;
+}
+
+article input:first-of-type:checked:before {
+  content: "\f004";
+  font-family: "FontAwesome";
+  color: #f3510a;
+}
+article input:first-of-type:checked {
+  outline: none;
+  animation: bounce;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+article h3 {
+  padding-bottom: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+}
+article p {
+  padding-bottom: 1rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+article div {
+  color: #f3510a;
+  font-size: 1.3rem;
+}
+
+article div::before {
+  content: "\20AC ";
+  font-size: 1.1rem;
+  padding-right: 0.5rem;
+}
+
+section header {
+  grid-area: header;
+
+  position: relative;
+  min-height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section header h2 {
+  top: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 4px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+section header h2,
+section header p {
+  min-width: 5rem;
+  text-align: center;
+  color: #f3510a;
+}
+
+section header p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 800px) {
+  section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "header header"
+      "a b"
+      "c d"
+      "e f"
+      "g h"
+      "i j";
+  }
+}
+
+@media (max-width: 500px) {
+  section {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f"
+      "g"
+      "h"
+      "i";
+  }
+}

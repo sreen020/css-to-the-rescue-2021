@@ -1,0 +1,455 @@
+:root {
+  --animationTime: 4s;
+}
+
+/* HEADER ANIMATION  */
+
+body > header:hover {
+  animation: headerAnimation 5s linear infinite;
+}
+
+@keyframes headerAnimation {
+  0% {
+    transform: perspective(20rem) rotateX(0deg);
+    animation-timing-function: ease-out;
+  }
+  3% {
+    transform: perspective(20rem) rotateX(-68deg);
+    animation-timing-function: ease-in-out;
+  }
+  10% {
+    transform: perspective(20rem) rotateX(60deg);
+    animation-timing-function: ease-in-out;
+  }
+  20% {
+    transform: perspective(20rem) rotateX(-55deg);
+    animation-timing-function: ease-in-out;
+  }
+  30% {
+    transform: perspective(20rem) rotateX(50deg);
+    animation-timing-function: ease-in-out;
+  }
+  40% {
+    transform: perspective(20rem) rotateX(-40deg);
+    animation-timing-function: ease-in-out;
+  }
+  50% {
+    transform: perspective(20rem) rotateX(35deg);
+    animation-timing-function: ease-in-out;
+  }
+  60% {
+    transform: perspective(20rem) rotateX(-25deg);
+    animation-timing-function: ease-in-out;
+  }
+  68% {
+    transform: perspective(20rem) rotateX(15deg);
+    animation-timing-function: ease-in-out;
+  }
+  76% {
+    transform: perspective(20rem) rotateX(-10deg);
+    animation-timing-function: ease-in-out;
+  }
+  84% {
+    transform: perspective(20rem) rotateX(6deg);
+    animation-timing-function: ease-in-out;
+  }
+  92% {
+    transform: perspective(20rem) rotateX(-3deg);
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: perspective(20rem) rotateX(0deg);
+    animation-timing-function: ease-in;
+  }
+}
+/* END HEADER  */
+
+/* SECTION HEADERS  */
+main input:checked ~ section header h2,
+main input:checked ~ section header p {
+  position: absolute;
+  animation: subHeaderAnimation var(--animationTime) 1;
+
+  animation-iteration-count: infinite;
+  font-family: "Roboto", sans-serif;
+  transition: letter-spacing 0.5s;
+  transition: 0.5s;
+  letter-spacing: 0px;
+}
+
+@keyframes subHeaderAnimation {
+  0% {
+    letter-spacing: -5px;
+    left: 15%;
+  }
+  25% {
+    letter-spacing: 20px;
+    left: 45%;
+  }
+  50% {
+    letter-spacing: -5px;
+    left: 80%;
+  }
+  75% {
+    letter-spacing: 20px;
+    left: 45%;
+  }
+  100% {
+    letter-spacing: -5px;
+    left: 15%;
+  }
+}
+
+/* ARTICLE ANIMATION  */
+main input:checked ~ section article:first-of-type {
+  background-color: cornflowerblue;
+  animation: textA var(--animationTime) 1;
+  animation-iteration-count: infinite;
+  font-family: "Stalinist One", cursive;
+  background-image: none;
+}
+main input:checked ~ section article:nth-child(3) {
+  background-color: red;
+  animation: textB var(--animationTime) 1;
+  animation-iteration-count: infinite;
+  font-family: "Shrikhand", cursive;
+  background-image: none;
+}
+main input:checked ~ section article:nth-child(4) {
+  background-color: green;
+  animation: textC var(--animationTime) 1;
+  animation-iteration-count: infinite;
+  font-family: "Shadows Into Light", cursive;
+  background-image: none;
+}
+main input:checked ~ section article:nth-child(5) {
+  background-color: pink;
+  animation: textD var(--animationTime) 1;
+  animation-iteration-count: infinite;
+  font-family: "Roboto", sans-serif;
+  background-image: none;
+}
+main input:checked ~ section article:nth-child(6) {
+  background-color: gray;
+  animation: textE var(--animationTime) 1;
+  animation-iteration-count: infinite;
+  font-family: "IBM Plex Mono", monospace;
+  background-image: none;
+}
+main input:checked ~ section article:nth-child(7) {
+  background-color: brown;
+  animation: textF var(--animationTime) 1;
+  animation-iteration-count: infinite;
+  font-family: "Hanalei", cursive;
+  background-image: none;
+}
+main input:checked ~ section article:nth-child(8) {
+  background-color: cyan;
+  animation: textG var(--animationTime) 1;
+  animation-iteration-count: infinite;
+  font-family: "Cutive", serif;
+  background-image: none;
+}
+main input:checked ~ section article:nth-child(9) {
+  background-color: tomato;
+  animation: textH var(--animationTime) 1;
+  animation-iteration-count: infinite;
+  font-family: "Bungee Shade", cursive;
+  background-image: none;
+}
+main input:checked ~ section article:nth-child(10) {
+  background-color: magenta;
+  animation: textI var(--animationTime) 1;
+  animation-iteration-count: infinite;
+  font-family: "Anton", sans-serif;
+  background-image: none;
+}
+@keyframes textA {
+  0% {
+    grid-area: a;
+  }
+  11% {
+    grid-area: b;
+  }
+  22% {
+    grid-area: c;
+  }
+  33% {
+    grid-area: d;
+  }
+  44% {
+    grid-area: e;
+  }
+  55% {
+    grid-area: f;
+  }
+  66% {
+    grid-area: g;
+  }
+  77% {
+    grid-area: h;
+  }
+  88% {
+    grid-area: i;
+  }
+  99% {
+    grid-area: a;
+  }
+}
+
+@keyframes textB {
+  0% {
+    grid-area: b;
+  }
+  11% {
+    grid-area: c;
+  }
+  22% {
+    grid-area: d;
+  }
+  33% {
+    grid-area: e;
+  }
+  44% {
+    grid-area: f;
+  }
+  55% {
+    grid-area: g;
+  }
+  66% {
+    grid-area: h;
+  }
+  77% {
+    grid-area: i;
+  }
+  88% {
+    grid-area: a;
+  }
+  99% {
+    grid-area: b;
+  }
+}
+@keyframes textC {
+  0% {
+    grid-area: c;
+  }
+  11% {
+    grid-area: d;
+  }
+  22% {
+    grid-area: e;
+  }
+  33% {
+    grid-area: f;
+  }
+  44% {
+    grid-area: g;
+  }
+  55% {
+    grid-area: h;
+  }
+  66% {
+    grid-area: i;
+  }
+  77% {
+    grid-area: a;
+  }
+  88% {
+    grid-area: b;
+  }
+  99% {
+    grid-area: c;
+  }
+}
+@keyframes textD {
+  0% {
+    grid-area: d;
+  }
+  11% {
+    grid-area: e;
+  }
+  22% {
+    grid-area: f;
+  }
+  33% {
+    grid-area: g;
+  }
+  44% {
+    grid-area: h;
+  }
+  55% {
+    grid-area: i;
+  }
+  66% {
+    grid-area: a;
+  }
+  77% {
+    grid-area: b;
+  }
+  88% {
+    grid-area: c;
+  }
+  99% {
+    grid-area: d;
+  }
+}
+@keyframes textE {
+  0% {
+    grid-area: e;
+  }
+  11% {
+    grid-area: f;
+  }
+  22% {
+    grid-area: g;
+  }
+  33% {
+    grid-area: h;
+  }
+  44% {
+    grid-area: i;
+  }
+  55% {
+    grid-area: a;
+  }
+  66% {
+    grid-area: b;
+  }
+  77% {
+    grid-area: c;
+  }
+  88% {
+    grid-area: d;
+  }
+  99% {
+    grid-area: e;
+  }
+}
+@keyframes textF {
+  0% {
+    grid-area: f;
+  }
+  11% {
+    grid-area: g;
+  }
+  22% {
+    grid-area: h;
+  }
+  33% {
+    grid-area: i;
+  }
+  44% {
+    grid-area: a;
+  }
+  55% {
+    grid-area: b;
+  }
+  66% {
+    grid-area: c;
+  }
+  77% {
+    grid-area: d;
+  }
+  88% {
+    grid-area: e;
+  }
+  99% {
+    grid-area: f;
+  }
+}
+@keyframes textG {
+  0% {
+    grid-area: g;
+  }
+  11% {
+    grid-area: h;
+  }
+  22% {
+    grid-area: i;
+  }
+  33% {
+    grid-area: a;
+  }
+  44% {
+    grid-area: b;
+  }
+  55% {
+    grid-area: c;
+  }
+  66% {
+    grid-area: d;
+  }
+  77% {
+    grid-area: e;
+  }
+  88% {
+    grid-area: f;
+  }
+  99% {
+    grid-area: g;
+  }
+}
+@keyframes textH {
+  0% {
+    grid-area: h;
+  }
+  11% {
+    grid-area: i;
+  }
+  22% {
+    grid-area: a;
+  }
+  33% {
+    grid-area: b;
+  }
+  44% {
+    grid-area: c;
+  }
+  55% {
+    grid-area: d;
+  }
+  66% {
+    grid-area: e;
+  }
+  77% {
+    grid-area: f;
+  }
+  88% {
+    grid-area: g;
+  }
+  99% {
+    grid-area: h;
+  }
+}
+@keyframes textI {
+  0% {
+    grid-area: i;
+  }
+  11% {
+    grid-area: a;
+  }
+  22% {
+    grid-area: b;
+  }
+  33% {
+    grid-area: c;
+  }
+  44% {
+    grid-area: d;
+  }
+  55% {
+    grid-area: e;
+  }
+  66% {
+    grid-area: f;
+  }
+  77% {
+    grid-area: g;
+  }
+  88% {
+    grid-area: h;
+  }
+  99% {
+    grid-area: i;
+  }
+}
