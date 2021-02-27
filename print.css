@@ -15,6 +15,10 @@
     margin-right: 22.2222%;
   }
 
+  body {
+    background: none;
+  }
+
   section {
     display: flex;
     flex-wrap: wrap;
@@ -25,7 +29,14 @@
   }
 
   body > header {
+    background: none;
     font-size: 2rem;
+    box-shadow: none;
+  }
+
+  body > header h1,
+  body > header p {
+    text-shadow: none;
   }
 
   article h3,
@@ -36,10 +47,29 @@
     color: #000;
   }
 
+  article h3 {
+    color: #f3510a;
+  }
+
   article {
     width: 33.333%;
-    background: gray;
-    border: 1px solid black;
+    background: none;
+    border-right: 1px solid black;
+    border-radius: 0;
+    min-height: none;
+    padding: 1.2rem;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  article:nth-child(4),
+  article:nth-child(7),
+  article:nth-child(10) {
+    border-right: 0;
+  }
+
+  article * {
+    letter-spacing: 0;
   }
   section header {
     min-width: 100%;

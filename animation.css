@@ -65,8 +65,8 @@ body > header:hover {
 /* END HEADER  */
 
 /* SECTION HEADERS  */
-main input:checked ~ section header h2,
-main input:checked ~ section header p {
+main input:first-child:checked ~ section header h2,
+main input:first-child:checked ~ section header p {
   position: absolute;
   animation: subHeaderAnimation var(--animationTime) 1;
 
@@ -101,63 +101,63 @@ main input:checked ~ section header p {
 }
 
 /* ARTICLE ANIMATION  */
-main input:checked ~ section article:first-of-type {
+main input:first-child:checked ~ section article:first-of-type {
   background-color: cornflowerblue;
   animation: textA var(--animationTime) 1;
   animation-iteration-count: infinite;
   font-family: "Stalinist One", cursive;
   background-image: none;
 }
-main input:checked ~ section article:nth-child(3) {
+main input:first-child:checked ~ section article:nth-child(3) {
   background-color: red;
   animation: textB var(--animationTime) 1;
   animation-iteration-count: infinite;
   font-family: "Shrikhand", cursive;
   background-image: none;
 }
-main input:checked ~ section article:nth-child(4) {
+main input:first-child:checked ~ section article:nth-child(4) {
   background-color: green;
   animation: textC var(--animationTime) 1;
   animation-iteration-count: infinite;
   font-family: "Shadows Into Light", cursive;
   background-image: none;
 }
-main input:checked ~ section article:nth-child(5) {
+main input:first-child:checked ~ section article:nth-child(5) {
   background-color: pink;
   animation: textD var(--animationTime) 1;
   animation-iteration-count: infinite;
   font-family: "Roboto", sans-serif;
   background-image: none;
 }
-main input:checked ~ section article:nth-child(6) {
+main input:first-child:checked ~ section article:nth-child(6) {
   background-color: gray;
   animation: textE var(--animationTime) 1;
   animation-iteration-count: infinite;
   font-family: "IBM Plex Mono", monospace;
   background-image: none;
 }
-main input:checked ~ section article:nth-child(7) {
+main input:first-child:checked ~ section article:nth-child(7) {
   background-color: brown;
   animation: textF var(--animationTime) 1;
   animation-iteration-count: infinite;
   font-family: "Hanalei", cursive;
   background-image: none;
 }
-main input:checked ~ section article:nth-child(8) {
+main input:first-child:checked ~ section article:nth-child(8) {
   background-color: cyan;
   animation: textG var(--animationTime) 1;
   animation-iteration-count: infinite;
   font-family: "Cutive", serif;
   background-image: none;
 }
-main input:checked ~ section article:nth-child(9) {
+main input:first-child:checked ~ section article:nth-child(9) {
   background-color: tomato;
   animation: textH var(--animationTime) 1;
   animation-iteration-count: infinite;
   font-family: "Bungee Shade", cursive;
   background-image: none;
 }
-main input:checked ~ section article:nth-child(10) {
+main input:first-child:checked ~ section article:nth-child(10) {
   background-color: magenta;
   animation: textI var(--animationTime) 1;
   animation-iteration-count: infinite;
