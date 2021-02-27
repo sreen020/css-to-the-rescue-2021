@@ -60,6 +60,7 @@ body > header p {
   font-size: 2rem;
   letter-spacing: 0.1em;
   text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
+  text-transform: capitalize;
 }
 
 main input {

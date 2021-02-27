@@ -39,6 +39,25 @@
     text-shadow: none;
   }
 
+  body > header h1 span:nth-child(2) {
+    color: #f3510a;
+  }
+
+  body > header p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+  }
+  body > header p::after {
+    content: attr(data-print);
+    white-space: pre-wrap;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #f3510a;
+    text-transform: uppercase;
+  }
+
   article h3,
   article p,
   article div {
