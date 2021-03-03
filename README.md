@@ -53,17 +53,17 @@ This wasn’t enough so I took it a step further. After doing some research I fo
 
 I couldn’t get this working with the minmax responsive function… So I did use one media query. <br>
 
-
+<br><br>
 **Darkmode**<br>
 Like I said before, i’ve had never heard about darkmode in css. This was a WHOAW moment for me. I’m sure that I’ll use this more from now on. 
 
 https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/
-
+<br>
 To use the darkmode mediatype you can just use:
 ```
 @media (prefers-color-scheme: dark)
 ```
-
+<br>
 I thought about changing my whole website but in the end I just changed the colors. Here is the code I did this with:
 
 ```
@@ -85,10 +85,10 @@ I thought about changing my whole website but in the end I just changed the colo
     text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
   }
 }
-
-
 ```
+<br><br>
 **Transform**<br>
+
 **Animate**<br>
 **Checkbox hack**<br>
 **Print stylesheets**<br>
