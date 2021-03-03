@@ -152,6 +152,25 @@ In onderstaande code maak in een animatie met gebruik van perspective.
 ```
 <br><br>
 **Animate**<br>
+Animations… I knew it existed but I did not really know how to use them. I always use transition: x amount of seconds for hovers but that’s it.
+<br>
+Animations can make a site really enjoyable so I was excited to work with it.
+<br>
+Finally, I made an animation where I change the grid columns. For me this was a combination of two things I didn’t know. 
+
+```
+@keyframes textA {
+  0% {
+    grid-area: a;
+  }
+  10% … 
+```
+<br>
+For an other animation I changed to way it moves by adjusting the “animation timing function”.
+```
+  animation-timing-function: ease-out;
+```
+
 **Checkbox hack**<br>
 **Print stylesheets**<br>
 
