@@ -30,6 +30,22 @@ How can you make working buttons using CSS only?<br>
 I’ve honestly never tough about this.<br>
 
 
-##Experimenting
+## Final results
+
+**Grid**<br>
+**Darkmode**<br>
+**Transform**<br>
+**Animate**<br>
+**Checkbox hack**<br>
+**Print stylesheets**<br>
+
 
 ##weeks
+
+### Week 1
+
+### Week 2
+
+### Week 3
+
+### Week 4
