@@ -53,6 +53,9 @@ This wasn’t enough so I took it a step further. After doing some research I fo
 
 I couldn’t get this working with the minmax responsive function… So I did use one media query. <br>
 
+<img src="https://github.com/sreen020/css-to-the-rescue-2021/blob/master/githubImages/grid-1.png" width="800px">
+<img src="https://github.com/sreen020/css-to-the-rescue-2021/blob/master/githubImages/grid-2.png" width="800px">
+
 <br><br>
 **Darkmode**<br>
 Like I said before, i’ve had never heard about darkmode in css. This was a WHOAW moment for me. I’m sure that I’ll use this more from now on. 
@@ -111,45 +114,13 @@ In onderstaande code maak in een animatie met gebruik van perspective.
     transform: perspective(20rem) rotateX(-55deg);
     animation-timing-function: ease-in-out;
   }
-  30% {
-    transform: perspective(20rem) rotateX(50deg);
-    animation-timing-function: ease-in-out;
-  }
-  40% {
-    transform: perspective(20rem) rotateX(-40deg);
-    animation-timing-function: ease-in-out;
-  }
-  50% {
-    transform: perspective(20rem) rotateX(35deg);
-    animation-timing-function: ease-in-out;
-  }
-  60% {
-    transform: perspective(20rem) rotateX(-25deg);
-    animation-timing-function: ease-in-out;
-  }
-  68% {
-    transform: perspective(20rem) rotateX(15deg);
-    animation-timing-function: ease-in-out;
-  }
-  76% {
-    transform: perspective(20rem) rotateX(-10deg);
-    animation-timing-function: ease-in-out;
-  }
-  84% {
-    transform: perspective(20rem) rotateX(6deg);
-    animation-timing-function: ease-in-out;
-  }
-  92% {
-    transform: perspective(20rem) rotateX(-3deg);
-    animation-timing-function: ease-in-out;
-  }
-  100% {
-    transform: perspective(20rem) rotateX(0deg);
-    animation-timing-function: ease-in;
-  }
+  ...
 }
 
 ```
+
+<img src="https://github.com/sreen020/css-to-the-rescue-2021/blob/master/githubImages/transform.png" width="800px">
+
 <br><br>
 **Animate**<br>
 Animations… I knew it existed but I did not really know how to use them. I always use transition: x amount of seconds for hovers but that’s it.
@@ -171,6 +142,9 @@ For an other animation I changed to way it moves by adjusting the “animation t
 ```
 animation-timing-function: ease-out;
 ```
+
+<img src="https://github.com/sreen020/css-to-the-rescue-2021/blob/master/githubImages/animation.png" width="800px">
+<img src="https://github.com/sreen020/css-to-the-rescue-2021/blob/master/githubImages/animation-2.png" width="800px">
 <br><br>
 
 **Checkbox hack**<br>
@@ -222,3 +196,5 @@ You also have a few new css properties like:
 ```
 
 With the page break after/before you can set the breakpoint. This means you’re in charge of the moment the text continuous to the next page.
+
+<img src="https://github.com/sreen020/css-to-the-rescue-2021/blob/master/githubImages/print.png" width="800px">
