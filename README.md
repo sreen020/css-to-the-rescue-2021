@@ -173,6 +173,17 @@ animation-timing-function: ease-out;
 ```
 
 **Checkbox hack**<br>
+“The checkbox hack”, you must admit, it sounds cool. With the checkbox hack you can use an input as a button. This works because in css you can add styling when a checkbox is checked. 
+
+With the ~ symbol you can select a sibling element. This means that you can add styling to siblings and the children of them. I used this multiple times in my website. This is an example of how I used it:
+
+```
+main input:first-child:checked ~ section article:nth-child(5) {
+     animation: textD var(--animationTime) infinite;
+}
+```
+
+<br><br>
 **Print stylesheets**<br>
 
 
