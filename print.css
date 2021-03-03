@@ -3,6 +3,17 @@
     --main-color: #2d3134;
     --accent-color: #f3510a;
     --bg-color: #202124;
+
+    --accent-color: #f3510a;
+    --bg-color: #fefefd;
+    --text-color: #000;
+    --header-color: #000;
+    --main-color: #f3510a;
+
+    --header-text: #000;
+    --price-color: #fff;
+    --heart-color: #fff;
+    --toggle-button: #000;
   }
   @page {
     margin-top: 11.1111%;
@@ -53,6 +64,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 2rem;
+    font-size: 2rem;
   }
   body > header p::after {
     content: attr(data-print);
