@@ -171,6 +171,7 @@ For an other animation I changed to way it moves by adjusting the “animation t
 ```
 animation-timing-function: ease-out;
 ```
+<br><br>
 
 **Checkbox hack**<br>
 “The checkbox hack”, you must admit, it sounds cool. With the checkbox hack you can use an input as a button. This works because in css you can add styling when a checkbox is checked. 
