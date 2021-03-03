@@ -113,47 +113,47 @@ main input:first-child:checked ~ section article {
 
 main input:first-child:checked ~ section article:first-of-type {
   background-color: cornflowerblue;
-  animation: textA var(--animationTime) 1;
+  animation: textA var(--animationTime) infinite;
   font-family: "Stalinist One", cursive;
 }
 main input:first-child:checked ~ section article:nth-child(3) {
   background-color: red;
-  animation: textB var(--animationTime) 1;
+  animation: textB var(--animationTime) infinite;
   font-family: "Shrikhand", cursive;
 }
 main input:first-child:checked ~ section article:nth-child(4) {
   background-color: green;
-  animation: textC var(--animationTime) 1;
+  animation: textC var(--animationTime) infinite;
   font-family: "Shadows Into Light", cursive;
 }
 main input:first-child:checked ~ section article:nth-child(5) {
   background-color: pink;
-  animation: textD var(--animationTime) 1;
+  animation: textD var(--animationTime) infinite;
   font-family: "Roboto", sans-serif;
 }
 main input:first-child:checked ~ section article:nth-child(6) {
   background-color: gray;
-  animation: textE var(--animationTime) 1;
+  animation: textE var(--animationTime) infinite;
   font-family: "IBM Plex Mono", monospace;
 }
 main input:first-child:checked ~ section article:nth-child(7) {
   background-color: brown;
-  animation: textF var(--animationTime) 1;
+  animation: textF var(--animationTime) infinite;
   font-family: "Hanalei", cursive;
 }
 main input:first-child:checked ~ section article:nth-child(8) {
   background-color: cyan;
-  animation: textG var(--animationTime) 1;
+  animation: textG var(--animationTime) infinite;
   font-family: "Cutive", serif;
 }
 main input:first-child:checked ~ section article:nth-child(9) {
   background-color: tomato;
-  animation: textH var(--animationTime) 1;
+  animation: textH var(--animationTime) infinite;
   font-family: "Bungee Shade", cursive;
 }
 main input:first-child:checked ~ section article:nth-child(10) {
   background-color: magenta;
-  animation: textI var(--animationTime) 1;
+  animation: textI var(--animationTime) infinite;
   font-family: "Anton", sans-serif;
 }
 

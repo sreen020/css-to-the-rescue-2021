@@ -85,6 +85,7 @@ section {
     "a b c"
     "d e f"
     "g h i";
+  /* grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); */
 }
 
 article {
@@ -208,6 +209,7 @@ article h3 {
   letter-spacing: 1px;
   text-align: center;
   text-transform: capitalize;
+  border-radius: 7px;
 }
 article p {
   padding-bottom: 1rem;
