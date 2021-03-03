@@ -1,47 +1,224 @@
-# CSS to the Rescue @cmda-minor-web 2020 - 2021
+# CSS to The Rescue
 
-Wij vinden het web fascinerend. De laatste jaren is CSS een volwassen en zeer krachtige taal geworden (niet langer een bottleneck - integendeel). Veel van de (nieuwe) **CSS-lekkernijen** worden echter nog niet ten volle benut. Sommige delen van de spec worden onterecht (nog) niet bemind, andere delen zijn zo groot en complex dat we mogelijkheden nog niet hebben doorgrond. Aan jou de  mooie opdracht om de onontgonnen delen van de CSS-wereld in kaart te brengen.
+## View the menu
+https://sreen020.github.io/css-to-the-rescue-2021/
 
-**In dit vierweekse vak ga je experimenteren met (voor jou) nieuwe CSS technieken - om daarna/mee een innovatieve, experimentele én aangename ervaring te creëren - met vanilla CSS en HTML dus (frameworks, preprocessors, libraries en JS zijn niet toegestaan).**
+## Assignment
+When we received this assignment I did not know in witch direction I would go. I did a little research about CSS Zen Garden. This is a website where everyone can style **the same** HTML. The outcome of each person is very different. 
+<br>
+I chose to work on the menu assignment. Like the CSS Zen Garden, the HTML is already made. My duty is to create the styling with as many new methods I could find.
+<br>
+## What do I want to use?
+I often use the same css stuff. It works, so why try new ones right? Well in this assignment I learned a **LOT** of new css tricks.<br>
 
-Nb. Het experiment wordt gewaardeerd - zelfs/zeker als het niet (helemaal) lukt. Voel je vrij om verder te gaan dan de CSS-technieken die je al beheerst.
+**Grid**<br>
+Before this assignment I only used flexbox. I knew grid existed but I’ve never working with it. To get familiar with grid I used https://cssgridgarden.com/<br>
+<br>
+**Darkmode**<br>
+Whaaaaaaat?? Is there a darkmode function in CSS?<br>
+<br>
+**Transform**<br>
+I know I can rotate something with this!<br>
+<br>
+**Animate**<br>
+When I see all those keyframes and percentages I’ll get scared.<br>
+<br>
+**Checkbox hack**<br>
+How can you make working buttons using CSS only?<br>
+<br>
+**Print stylesheets**<br>
+I’ve honestly never tough about this.<br>
 
-## Dingen om vooraf te doen
-- 🔱 **Fork** deze repository
-- ✅ [**Enroll** je voor de minor via de courselector](https://icthva.sharepoint.com/sites/courseselector#/CourseSelector/web-design-and-development/2020-2021) (dan kun je je werk straks ook op [DLO](https://dlo.mijnhva.nl/d2l/home/275640) opleveren)
-- 🎥 **Camera's aan** tijdens lessen en co (zorg dat je webcam werkt)
-- 📒 **Bekijk** het [programma](https://cmda-minor-web.github.io/css-to-the-rescue-2021/files/CSSttR-Kickoff.pdf) (pdf 30MB) en de [kennismakingsoefening](https://cmda-minor-web.github.io/css-to-the-rescue-2021/oefening.html) alvast even
 
-## Opdrachten
-Het vak bestaat uit:
-- [Een kennismakingsoefening](https://cmda-minor-web.github.io/css-to-the-rescue-2021/oefening.html)
-- [De eindopdracht](https://cmda-minor-web.github.io/css-to-the-rescue-2021/index.html)
+## Final results
 
-De [beoordelingscriteria voor de eindopdracht](https://cmda-minor-web.github.io/css-to-the-rescue-2021/beoordelingsformulier.html) op een rijte.
+**Grid**<br>
+Let’s try display grid. After watching some video’s and playing around for a while I started to understand grid. My vision was clear, I want to have a 3 column full responsive grid. The amount of rows can variate. I used “fr” for this.<br>
 
-## Programma
-Het vak beslaat 4 weken. Bekijk de [kick-off presentatie](https://cmda-minor-web.github.io/css-to-the-rescue-2021/files/CSSttR-Kickoff.pdf) (pdf 30MB). 
+```
+grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 
-In Teams vind je de [Excel met de indeling en planning](https://teams.microsoft.com/l/file/6E37FED4-91C7-4293-A7C4-C0309D24634D?tenantId=0907bb1e-21fc-476f-8843-02d09ceb59a7&fileType=xlsx&objectUrl=https%3A%2F%2Ficthva.sharepoint.com%2Fsites%2FFDMCI_EDU__CMD20_21_Minor_Web_5i7j73jt%2FShared%20Documents%2F03%20-%20CSS%20to%20the%20Rescue%2FCSS%20to%20the%20rescue%20-%20Indeling%20%26%20Planning.xlsx&baseUrl=https%3A%2F%2Ficthva.sharepoint.com%2Fsites%2FFDMCI_EDU__CMD20_21_Minor_Web_5i7j73jt&serviceName=teams&threadId=19:84bbb4a3b90d40a6b434649359689744@thread.tacv2&groupId=5d001f9a-0a4b-4768-92b1-0f1768328ba3). 
-Daar schrijf je je ook in voor themasessies en het eindgesprek.
+```
+<br>
+This wasn’t enough so I took it a step further. After doing some research I found something named: “named grid”. This means that you can make a grid and tell the grid where something need to be placed. <br>
 
-Colleges, lessen en gesprekken vinden plaats [in Teams](https://teams.microsoft.com/l/channel/19%3a84bbb4a3b90d40a6b434649359689744%40thread.tacv2/03%2520-%2520CSS%2520to%2520the%2520Rescue?groupId=5d001f9a-0a4b-4768-92b1-0f1768328ba3&tenantId=0907bb1e-21fc-476f-8843-02d09ceb59a7).
+```
+  grid-template-areas:
+    "header header header"
+    "a b c"
+    "d e f"
+    "g h i";
 
-## Docenten
-- Vasilis van Gemert
-- Thijs Spijker
-- Sanne 't Hooft
-- Leonie Smits
+```
 
-## Leerdoelen
-- Je kunt experimenteren met (voor jou) nieuwe css-technieken - om de mogelijkheden op waarde te schatten en te gebruiken waar gepast.
-- Je hebt begrip van de volle kracht en mogelijkheden van CSS. Je laat zien dat CSS meer kan dan allen web pages 'stylen'.
-- Je hebt begrip van de interactie-technieken van CSS (en HTML). De UX is aangenaam bruikbaar binnen de gekozen context(en).
-- Je hebt begrip hoe progressive enhancement elegant toe te passen. Je laat zien dat je cascade, inheritance en specificity kunt toepassen.
+I couldn’t get this working with the minmax responsive function… So I did use one media query. <br>
 
-[](https://docs.google.com/spreadsheets/d/1Xv48MSiACNmnM6nXpGGUb8mJDC459uSaxJszO_zLEp8/edit?usp=sharing)
+<br><br>
+**Darkmode**<br>
+Like I said before, i’ve had never heard about darkmode in css. This was a WHOAW moment for me. I’m sure that I’ll use this more from now on. 
 
-## De Selector First CSS & No JS aanpak
-Het **eerste uitgangspunt** is dat je *geen* ID's en classes gebruikt. Niet omdat ze niet nuttig zijn, maar om te oefenen met de [vele CSS selectoren](https://css-tricks.com/almanac/) die je tot je beschikking hebt. ID's mag je alleen gebruiken om de :target selector te triggeren. En als het echt echt echt niet anders kan, heb je permissie om een paar classes toe te voegen.
+https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/
+<br>
+To use the darkmode mediatype you can just use:
+```
+@media (prefers-color-scheme: dark)
+```
+<br>
+I thought about changing my whole website but in the end I just changed the colors. Here is the code I did this with:
 
-Een **tweede uitgangspunt** is dat je *geen* JS gebruikt (i.i.g. zo min mogelijk - het vak heet niet voor niets CSS to the Rescue). Wat met CSS en/of HTML kan mag je *niet* met JS realiseren en het is *niet* toegestaan om CSS properties met JS aan te passen. We vinden het daarentegen wel interessant dat je verkent waar JS en CSS elkaar raken/versterken, bijv. het [uitlezen en aanpassen van CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties), of bijv. de [animationstart](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/animationstart_event), [animationcancel](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/animationcancel_event), [animationiteration](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/animationiteration_event) en [animationend](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/animationend_event) events gebruiken.
+```
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-color: #2d3134;
+    --accent-color: #f3510a;
+    --bg-color: #202124;
+    --text-color: #fefefd;
+    --header-color: #f3510a;
+
+    --header-text: #202020;
+    --price-color: #f3510a;
+    --heart-color: #f3510a;
+    --toggle-button: #f3510a;
+  }
+
+  body > header p {
+    text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
+  }
+}
+```
+<br><br>
+**Transform**<br>
+
+I’ve used transforms before but this was only to rotate an image with 180deg… So also this was pretty new to me.  I tried a lot of thing in this project, skew, 3d and perspective.
+
+In onderstaande code maak in een animatie met gebruik van perspective.
+
+```
+@keyframes headerAnimation {
+  0% {
+    transform: perspective(20rem) rotateX(0deg);
+    animation-timing-function: ease-out;
+  }
+  3% {
+    transform: perspective(20rem) rotateX(-68deg);
+    animation-timing-function: ease-in-out;
+  }
+  10% {
+    transform: perspective(20rem) rotateX(60deg);
+    animation-timing-function: ease-in-out;
+  }
+  20% {
+    transform: perspective(20rem) rotateX(-55deg);
+    animation-timing-function: ease-in-out;
+  }
+  30% {
+    transform: perspective(20rem) rotateX(50deg);
+    animation-timing-function: ease-in-out;
+  }
+  40% {
+    transform: perspective(20rem) rotateX(-40deg);
+    animation-timing-function: ease-in-out;
+  }
+  50% {
+    transform: perspective(20rem) rotateX(35deg);
+    animation-timing-function: ease-in-out;
+  }
+  60% {
+    transform: perspective(20rem) rotateX(-25deg);
+    animation-timing-function: ease-in-out;
+  }
+  68% {
+    transform: perspective(20rem) rotateX(15deg);
+    animation-timing-function: ease-in-out;
+  }
+  76% {
+    transform: perspective(20rem) rotateX(-10deg);
+    animation-timing-function: ease-in-out;
+  }
+  84% {
+    transform: perspective(20rem) rotateX(6deg);
+    animation-timing-function: ease-in-out;
+  }
+  92% {
+    transform: perspective(20rem) rotateX(-3deg);
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: perspective(20rem) rotateX(0deg);
+    animation-timing-function: ease-in;
+  }
+}
+
+```
+<br><br>
+**Animate**<br>
+Animations… I knew it existed but I did not really know how to use them. I always use transition: x amount of seconds for hovers but that’s it.
+<br>
+Animations can make a site really enjoyable so I was excited to work with it.
+<br>
+Finally, I made an animation where I change the grid columns. For me this was a combination of two things I didn’t know. 
+
+```
+@keyframes textA {
+  0% {
+    grid-area: a;
+  }
+  10% … 
+```
+<br>
+For an other animation I changed to way it moves by adjusting the “animation timing function".
+
+```
+animation-timing-function: ease-out;
+```
+<br><br>
+
+**Checkbox hack**<br>
+“The checkbox hack”, you must admit, it sounds cool. With the checkbox hack you can use an input as a button. This works because in css you can add styling when a checkbox is checked. 
+
+With the ~ symbol you can select a sibling element. This means that you can add styling to siblings and the children of them. I used this multiple times in my website. This is an example of how I used it:
+
+```
+main input:first-child:checked ~ section article:nth-child(5) {
+     animation: textD var(--animationTime) infinite;
+}
+```
+
+<br><br>
+**Print stylesheets**<br>
+I’m making a website for a menu of a restaurant. Usually a menu is on paper so why not add a print stylesheet so the restaurant can print it. 
+
+On the website I used a lot of background colors, shadows, animations, clickable items and other stuff. These thing aren’t good for printing. When I use a gradient background color you can go buy a new cartridge after each piece of paper. 
+
+Just like the darkmode, the print stylesheet is also being called with using a @media type.
+
+Within the print media type there are some standart selectors like the @page. With this selector you can add marges for the pages.
+
+```
+  @page {
+    margin-top: 11.1111%;
+    margin-right: 11.1111%;
+    margin-bottom: 22.2222%;
+    margin-left: 11.1111%;
+  }
+  @page: left {
+    margin-right: 22.2222%;
+  }
+  @page: right {
+    margin-right: 22.2222%;
+  }
+  @page: first {
+    margin-right: 22.2222%;
+  }
+
+```
+
+You also have a few new css properties like:
+
+```
+    page-break-after: always;
+    page-break-before: avoid;
+
+```
+
+With the page break after/before you can set the breakpoint. This means you’re in charge of the moment the text continuous to the next page.
