@@ -89,6 +89,68 @@ I thought about changing my whole website but in the end I just changed the colo
 <br><br>
 **Transform**<br>
 
+I’ve used transforms before but this was only to rotate an image with 180deg… So also this was pretty new to me.  I tried a lot of thing in this project, skew, 3d and perspective.
+
+In onderstaande code maak in een animatie met gebruik van perspective.
+
+```
+@keyframes headerAnimation {
+  0% {
+    transform: perspective(20rem) rotateX(0deg);
+    animation-timing-function: ease-out;
+  }
+  3% {
+    transform: perspective(20rem) rotateX(-68deg);
+    animation-timing-function: ease-in-out;
+  }
+  10% {
+    transform: perspective(20rem) rotateX(60deg);
+    animation-timing-function: ease-in-out;
+  }
+  20% {
+    transform: perspective(20rem) rotateX(-55deg);
+    animation-timing-function: ease-in-out;
+  }
+  30% {
+    transform: perspective(20rem) rotateX(50deg);
+    animation-timing-function: ease-in-out;
+  }
+  40% {
+    transform: perspective(20rem) rotateX(-40deg);
+    animation-timing-function: ease-in-out;
+  }
+  50% {
+    transform: perspective(20rem) rotateX(35deg);
+    animation-timing-function: ease-in-out;
+  }
+  60% {
+    transform: perspective(20rem) rotateX(-25deg);
+    animation-timing-function: ease-in-out;
+  }
+  68% {
+    transform: perspective(20rem) rotateX(15deg);
+    animation-timing-function: ease-in-out;
+  }
+  76% {
+    transform: perspective(20rem) rotateX(-10deg);
+    animation-timing-function: ease-in-out;
+  }
+  84% {
+    transform: perspective(20rem) rotateX(6deg);
+    animation-timing-function: ease-in-out;
+  }
+  92% {
+    transform: perspective(20rem) rotateX(-3deg);
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: perspective(20rem) rotateX(0deg);
+    animation-timing-function: ease-in;
+  }
+}
+
+```
+<br><br>
 **Animate**<br>
 **Checkbox hack**<br>
 **Print stylesheets**<br>
