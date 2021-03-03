@@ -1,4 +1,9 @@
 @media print {
+  :root {
+    --main-color: #2d3134;
+    --accent-color: #f3510a;
+    --bg-color: #202124;
+  }
   @page {
     margin-top: 11.1111%;
     margin-right: 11.1111%;
@@ -40,7 +45,7 @@
   }
 
   body > header h1 span:nth-child(2) {
-    color: #f3510a;
+    color: var(--accent-color);
   }
 
   body > header p {
@@ -54,7 +59,7 @@
     white-space: pre-wrap;
     font-size: 1.2rem;
     font-weight: 800;
-    color: #f3510a;
+    color: var(--accent-color);
     text-transform: uppercase;
   }
 
@@ -67,7 +72,7 @@
   }
 
   article h3 {
-    color: #f3510a;
+    color: var(--accent-color);
   }
 
   article {
