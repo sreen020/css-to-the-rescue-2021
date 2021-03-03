@@ -198,3 +198,8 @@ You also have a few new css properties like:
 With the page break after/before you can set the breakpoint. This means you’re in charge of the moment the text continuous to the next page.
 
 <img src="https://github.com/sreen020/css-to-the-rescue-2021/blob/master/githubImages/print.png" width="800px">
+
+**Performance**
+
+<img src="https://github.com/sreen020/css-to-the-rescue-2021/blob/master/githubImages/performance.png" width="800px">
+
