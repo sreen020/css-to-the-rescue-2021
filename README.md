@@ -166,9 +166,10 @@ Finally, I made an animation where I change the grid columns. For me this was a 
   10% … 
 ```
 <br>
-For an other animation I changed to way it moves by adjusting the “animation timing function”.
+For an other animation I changed to way it moves by adjusting the “animation timing function".
+
 ```
-  animation-timing-function: ease-out;
+animation-timing-function: ease-out;
 ```
 
 **Checkbox hack**<br>
