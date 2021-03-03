@@ -186,14 +186,39 @@ main input:first-child:checked ~ section article:nth-child(5) {
 
 <br><br>
 **Print stylesheets**<br>
+I’m making a website for a menu of a restaurant. Usually a menu is on paper so why not add a print stylesheet so the restaurant can print it. 
 
+On the website I used a lot of background colors, shadows, animations, clickable items and other stuff. These thing aren’t good for printing. When I use a gradient background color you can go buy a new cartridge after each piece of paper. 
 
-##weeks
+Just like the darkmode, the print stylesheet is also being called with using a @media type.
 
-### Week 1
+Within the print media type there are some standart selectors like the @page. With this selector you can add marges for the pages.
 
-### Week 2
+```
+  @page {
+    margin-top: 11.1111%;
+    margin-right: 11.1111%;
+    margin-bottom: 22.2222%;
+    margin-left: 11.1111%;
+  }
+  @page: left {
+    margin-right: 22.2222%;
+  }
+  @page: right {
+    margin-right: 22.2222%;
+  }
+  @page: first {
+    margin-right: 22.2222%;
+  }
 
-### Week 3
+```
 
-### Week 4
+You also have a few new css properties like:
+
+```
+    page-break-after: always;
+    page-break-before: avoid;
+
+```
+
+With the page break after/before you can set the breakpoint. This means you’re in charge of the moment the text continuous to the next page.
