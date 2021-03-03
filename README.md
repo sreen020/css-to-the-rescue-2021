@@ -55,6 +55,39 @@ I couldn’t get this working with the minmax responsive function… So I did us
 
 
 **Darkmode**<br>
+Like I said before, i’ve had never heard about darkmode in css. This was a WHOAW moment for me. I’m sure that I’ll use this more from now on. 
+
+https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/
+
+To use the darkmode mediatype you can just use:
+```
+@media (prefers-color-scheme: dark)
+```
+
+I thought about changing my whole website but in the end I just changed the colors. Here is the code I did this with:
+
+```
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-color: #2d3134;
+    --accent-color: #f3510a;
+    --bg-color: #202124;
+    --text-color: #fefefd;
+    --header-color: #f3510a;
+
+    --header-text: #202020;
+    --price-color: #f3510a;
+    --heart-color: #f3510a;
+    --toggle-button: #f3510a;
+  }
+
+  body > header p {
+    text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
+  }
+}
+
+
+```
 **Transform**<br>
 **Animate**<br>
 **Checkbox hack**<br>
