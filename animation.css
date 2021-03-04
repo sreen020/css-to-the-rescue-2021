@@ -1,13 +1,16 @@
+/* _____________________  Animations _____________________ */
+
+/* This variable can is the same for subheader animations and the article animations */
 :root {
   --animationTime: 4s;
 }
 
-/* HEADER ANIMATION  */
+/* _____________________  Header animations _____________________ */
 
 body > header:hover {
   animation: headerAnimation 5s linear infinite;
 }
-
+/* The header gets a flip effect like a hanging sign you'll give a hit to  */
 @keyframes headerAnimation {
   0% {
     transform: perspective(20rem) rotateX(0deg);
@@ -62,9 +65,9 @@ body > header:hover {
     animation-timing-function: ease-in;
   }
 }
-/* END HEADER  */
 
-/* SECTION HEADERS  */
+/* _____________________  Header for each section _____________________ */
+
 main input:first-child:checked ~ section header h2,
 main input:first-child:checked ~ section header p {
   position: absolute;
@@ -76,6 +79,8 @@ main input:first-child:checked ~ section header p {
   transition: letter-spacing 0.5s;
   transition: 0.5s;
 }
+
+/* This effect will make the subheader text dance. It changes the letterspacing and placements  */
 
 @keyframes subHeaderAnimation {
   0% {
@@ -100,7 +105,9 @@ main input:first-child:checked ~ section header p {
   }
 }
 
-/* ARTICLE ANIMATION  */
+/* _____________________  article animations _____________________ */
+
+/* each individual article gets there own styling when the animations runs.  */
 
 main input:first-child:checked ~ section article div {
   color: #fff;
@@ -156,6 +163,8 @@ main input:first-child:checked ~ section article:nth-child(10) {
   animation: textI var(--animationTime) infinite;
   font-family: "Anton", sans-serif;
 }
+
+/* each individual article gets there own animation. The articles will change places using grid-areas  */
 
 @keyframes textA {
   0% {
@@ -443,5 +452,84 @@ main input:first-child:checked ~ section article:nth-child(10) {
   }
   99% {
     grid-area: i;
+  }
+}
+
+/* _____________________  heart animations _____________________ */
+
+article input:first-of-type:checked {
+  outline: none;
+  animation: bounce;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+}
+
+/* little animation for the heart icon bounce */
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* _____________________  Laser animations _____________________ */
+/* When you click on the heart icon the laser will apear and shoot its ways trough the screen  */
+
+article input:first-of-type:checked ~ h3 {
+  animation: laser 6s linear 1;
+}
+
+@keyframes laser {
+  0% {
+    color: #fff;
+    background: none;
+    height: 2.5rem;
+  }
+  20% {
+    color: transparent;
+    background-color: #39ff14;
+    height: 0.9rem;
+  }
+  30% {
+    position: relative;
+    right: 1vw;
+  }
+  50% {
+    padding-right: 5rem;
+    padding-left: 5rem;
+    right: 0;
+  }
+  55% {
+    right: 200vh;
+    opacity: 1;
+  }
+  56% {
+    right: 200vh;
+    opacity: 0;
+  }
+  57% {
+    right: -200vh;
+    opacity: 0;
+  }
+  58% {
+    opacity: 1;
+    right: -200vh;
+  }
+  60% {
+    right: 2vh;
+    color: transparent;
+    height: 0.9rem;
+  }
+  63% {
+    right: 0;
+  }
+  75% {
+    right: 0;
+    height: 2.5rem;
   }
 }

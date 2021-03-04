@@ -1,17 +1,17 @@
+/* _____________________  Main styling _____________________ */
+
 :root {
+  --main-color: #f3510a;
   --accent-color: #f3510a;
   --bg-color: #fefefd;
   --text-color: #fff;
   --header-color: #000;
-  --main-color: #f3510a;
 
   --header-text: #fefefd;
   --price-color: #fff;
   --heart-color: #fff;
   --toggle-button: #000;
 }
-
-/* var(--accent-color) */
 
 * {
   box-sizing: border-box;
@@ -25,23 +25,14 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
 }
 
-main > div {
-  padding: 1rem;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background: #000;
-  color: #fff;
-}
-
-main > div label {
-  font-family: "Roboto", sans-serif;
-  padding-right: 1rem;
-}
-
+/* Checkbox hack toggle */
 main > label {
   color: var(--toggle-button);
   font-size: 0.7rem;
+}
+
+main input {
+  margin: 1rem 0.5rem 1rem 1rem;
 }
 
 /* MAIN HEADER  */
@@ -73,10 +64,7 @@ body > header p {
   text-transform: capitalize;
 }
 
-main input {
-  margin: 1rem 0.5rem 1rem 1rem;
-}
-
+/* Creating the main grid  */
 section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -86,148 +74,6 @@ section {
     "d e f"
     "g h i";
   /* grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); */
-}
-
-article {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  background-color: var(--main-color);
-
-  color: var(--text-color);
-  min-height: 10rem;
-  padding: 3rem 2rem;
-  margin: 1.5rem;
-  border-radius: 11px;
-
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-
-  /* background-image: linear-gradient(#dd3e54, #6be585);
-  background-attachment: fixed; */
-}
-
-article input:first-of-type {
-  position: absolute;
-  left: 0;
-  top: 0;
-  cursor: pointer;
-  -webkit-appearance: none;
-}
-
-article input:first-of-type:before {
-  content: "\f08a";
-  font-family: "FontAwesome";
-  font-size: 1.1rem;
-  color: var(--heart-color);
-  outline: none;
-  border: none;
-  transition: 0.3s all;
-}
-
-article input:first-of-type:checked:before {
-  content: "\f004";
-  font-family: "FontAwesome";
-  color: var(--heart-color);
-}
-article input:first-of-type:checked {
-  outline: none;
-  animation: bounce;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-}
-@keyframes bounce {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.7);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-article input:first-of-type:checked ~ h3 {
-  animation: laser 6s linear 1;
-}
-
-@keyframes laser {
-  0% {
-    color: #fff;
-    background: none;
-    height: 2.5rem;
-  }
-  20% {
-    color: transparent;
-    background-color: #39ff14;
-    height: 0.9rem;
-  }
-  30% {
-    position: relative;
-    right: 1vw;
-  }
-  50% {
-    padding-right: 5rem;
-    padding-left: 5rem;
-    right: 0;
-  }
-  55% {
-    right: 200vh;
-    opacity: 1;
-  }
-  56% {
-    right: 200vh;
-    opacity: 0;
-  }
-  57% {
-    right: -200vh;
-    opacity: 0;
-  }
-  58% {
-    opacity: 1;
-    right: -200vh;
-  }
-  60% {
-    right: 2vh;
-    color: transparent;
-    height: 0.9rem;
-  }
-  63% {
-    right: 0;
-  }
-  75% {
-    right: 0;
-    height: 2.5rem;
-  }
-}
-
-article h3 {
-  padding-bottom: 1rem;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-align: center;
-  text-transform: capitalize;
-  border-radius: 7px;
-}
-article p {
-  padding-bottom: 1rem;
-  font-weight: 100;
-  letter-spacing: 2px;
-  text-align: center;
-  text-transform: capitalize;
-}
-
-article div {
-  color: var(--price-color);
-  font-size: 1.3rem;
-}
-
-article div::before {
-  content: "\20AC ";
-  font-size: 1.1rem;
-  padding-right: 0.5rem;
 }
 
 section header {
@@ -262,6 +108,79 @@ section header p {
   letter-spacing: 1px;
 }
 
+/* Each recepy is stored in an article */
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background-color: var(--main-color);
+
+  color: var(--text-color);
+  min-height: 10rem;
+  padding: 3rem 2rem;
+  margin: 1.5rem;
+  border-radius: 11px;
+
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+/* In each article there is a heart icon you can press */
+article input:first-of-type {
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+article input:first-of-type:before {
+  content: "\f08a";
+  font-family: "FontAwesome";
+  font-size: 1.1rem;
+  color: var(--heart-color);
+  outline: none;
+  border: none;
+  transition: 0.3s all;
+}
+
+/* This changes the collor of the heart when it gets clicked */
+article input:first-of-type:checked:before {
+  content: "\f004";
+  font-family: "FontAwesome";
+  color: var(--heart-color);
+}
+
+article h3 {
+  padding-bottom: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 7px;
+}
+article p {
+  padding-bottom: 1rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+article div {
+  color: var(--price-color);
+  font-size: 1.3rem;
+}
+
+/* This places an euro sign before the price  */
+article div::before {
+  content: "\20AC ";
+  font-size: 1.1rem;
+  padding-right: 0.5rem;
+}
+
+/* Because i'm using named grid areas i couldnt figure out how to make them responsive without using @media but i know several ways to make do it without named grid areas */
 @media (max-width: 800px) {
   section {
     grid-template-columns: repeat(2, 1fr);

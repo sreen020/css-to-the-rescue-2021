@@ -1,3 +1,6 @@
+/* _____________________  Print stylesheet _____________________ */
+
+/* When I print the website I want the colors to be the same on darkmode and normal mode so i declare each variables to be sure */
 @media print {
   :root {
     --main-color: #2d3134;
@@ -15,6 +18,9 @@
     --heart-color: #fff;
     --toggle-button: #000;
   }
+
+  /* The @page can be used to add styling to each page with the code below I can set the margens right */
+  /* I can also call page: right to select the right page only */
   @page {
     margin-top: 11.1111%;
     margin-right: 11.1111%;
@@ -35,6 +41,7 @@
     background: none;
   }
 
+  /* with page-break-after you can select the moment the content will break to the next page */
   section {
     display: flex;
     flex-wrap: wrap;
@@ -97,6 +104,7 @@
     box-shadow: none;
   }
 
+  /* I only want a border on the inside */
   article:nth-child(4),
   article:nth-child(7),
   article:nth-child(10) {

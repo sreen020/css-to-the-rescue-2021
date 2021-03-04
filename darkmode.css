@@ -1,3 +1,6 @@
+/* _____________________  Darkmode _____________________ */
+
+/* The colors will change, this depents on the users setting prefferences */
 @media (prefers-color-scheme: dark) {
   :root {
     --main-color: #2d3134;
